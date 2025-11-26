@@ -9,7 +9,7 @@ class CommandRequest(BaseModel):
     command: str
     key: str
 
-API_KEY = "https://discord.com/api/webhooks/1382074236751057008/yEP6avmLcMgOYURbbxLazD43ugPuPKjYaTXeJ9XnBZ262ogYXbw1IF4ysYHETPZ6HIxj"  # CHANGE THIS!!!
+API_KEY = "hawkeyeban"  # CHANGE THIS!!!
 
 @app.post("/run")
 def run_command(cmd: CommandRequest):
@@ -26,3 +26,4 @@ def poll():
     cmd = latest_command
     latest_command = ""
     return {"command": cmd}
+
